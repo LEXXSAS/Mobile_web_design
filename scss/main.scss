@@ -51,15 +51,16 @@ header {
     // padding-top: 34px;
     // margin-top: 34px;
 //   z-index: 10;
-  padding-bottom: 0;
-
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 //    width: 50px;
     width: 346px;
     margin: 30px auto;
     // border: 1px solid rgb(140, 219, 116);
 
     .menu {
-        background: #F7F7F7;
+        // background: #F7F7F7;
         padding:1em;
         display: inline-flex;
         justify-content: center;
@@ -67,6 +68,9 @@ header {
         border-radius: 5px;
         padding-top: 1em;
         padding-right: 1em;
+    }
+    .gamburger {
+      display: none;
     }
 }
 
@@ -142,6 +146,11 @@ main {
         color: #6F6F6F;
         box-shadow: 2px 0px 20px rgba($color: #C8C5CB, $alpha: 0.25);
       }
+      .button:hover {
+        background: linear-gradient(180deg, #C04679 0%, #F6589A 100%);
+        color: #FFF1D7;
+        cursor: pointer;
+      }
     }
 }
 .mid {
@@ -195,6 +204,33 @@ main {
   }
 
 }
+
+.corporation:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, #C04679 0%, #F6589A 100%);
+  .info {
+    flex: 1;
+    
+    .title {
+      color: #fff;
+    }
+    .location {
+      color: #FFF1D7;
+    }
+    .beds {
+      color: #FFF598;
+    }
+  }
+  &.alt {
+    .info {
+      .beds {
+        color: #FFF598;
+      }
+    }
+  }
+
+}
+
 .footer {
   height: 50px;
   // background-color: #eeeeee;

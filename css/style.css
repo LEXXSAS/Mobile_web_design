@@ -46,10 +46,15 @@ body {
 
 header {
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 346px;
   margin: 30px auto; }
   header .menu {
-    background: #F7F7F7;
     padding: 1em;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -63,6 +68,8 @@ header {
     border-radius: 5px;
     padding-top: 1em;
     padding-right: 1em; }
+  header .gamburger {
+    display: none; }
 
 .topimg {
   padding: 0px 50px 0px 50px;
@@ -130,6 +137,11 @@ main {
       color: #6F6F6F;
       -webkit-box-shadow: 2px 0px 20px rgba(200, 197, 203, 0.25);
               box-shadow: 2px 0px 20px rgba(200, 197, 203, 0.25); }
+    main .buttons .button:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#C04679), to(#F6589A));
+      background: linear-gradient(180deg, #C04679 0%, #F6589A 100%);
+      color: #FFF1D7;
+      cursor: pointer; }
 
 .mid {
   padding: 24px 0px 15px 0px; }
@@ -175,6 +187,23 @@ main {
       font-size: 0,9231rem; }
   .corporation.alt .info .beds {
     color: #FFA10F; }
+
+.corporation:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C04679), to(#F6589A));
+  background: linear-gradient(180deg, #C04679 0%, #F6589A 100%); }
+  .corporation:hover .info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .corporation:hover .info .title {
+      color: #fff; }
+    .corporation:hover .info .location {
+      color: #FFF1D7; }
+    .corporation:hover .info .beds {
+      color: #FFF598; }
+  .corporation:hover.alt .info .beds {
+    color: #FFF598; }
 
 .footer {
   height: 50px;
