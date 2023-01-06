@@ -42,10 +42,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; 
-  transition: all .3s ease-in-out;
-
-}
+          align-items: center; }
 
 header {
   padding-bottom: 0;
@@ -144,6 +141,7 @@ main {
       background: -webkit-gradient(linear, left top, left bottom, from(#C04679), to(#F6589A));
       background: linear-gradient(180deg, #C04679 0%, #F6589A 100%);
       color: #FFF1D7;
+      transition: all .5s ease-in-out;
       cursor: pointer; }
 
 .mid {
@@ -159,6 +157,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  transition: all .5s ease-in-out;
   background: #fff;
   padding: 16px;
   border-radius: 12px;
